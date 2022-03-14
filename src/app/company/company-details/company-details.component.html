@@ -1,0 +1,31 @@
+
+<div class="jumbotron" style="text-align: center">
+    <table class="table table-dark center" style="text-align: center">
+      <tr>
+        <td>Name</td>
+        <td><input type="text" value="{{ companyObj.cname }}" /></td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td><input type="text" value="{{ companyObj.cemail }}" /></td>
+      </tr>
+      <tr>
+        <td>Mobile</td>
+        <td><input type="text" value="{{ companyObj.cmobile }}" /></td>
+      </tr>
+      <tr>
+        <td>Location</td>
+        <td><input type="text" value="{{ companyObj.clocation }}" /></td>
+      </tr>
+      <tr>
+        <td>Username</td>
+        <td><input type="text" value="{{ companyObj.cusername }}" /></td>
+      </tr>
+      <tr>
+        <td>password</td>
+        <td><input type="text" value="{{ companyObj.cpassword }}" /></td>
+      </tr>
+    </table>
+    <button class="btn btn-info float-right" (click)="getback()">Go Back</button>
+  </div>
+  

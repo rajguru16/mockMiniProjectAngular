@@ -1,0 +1,31 @@
+<router-outlet></router-outlet>
+<h1 style="text-align: center;"><b>All Comapny Data</b></h1>
+<div class="container">
+    <table class="table table-striped">
+      <tbody >
+          <th>Company Name</th>
+          <th>Company Email</th>
+          <th>Company Mobile number</th>
+          <th>Company Location</th>
+          <th>User Name</th>
+          <th>Password</th>
+        <tr *ngFor="let company of companyList">
+          <td>{{company.cname}}</td>
+          <td>{{company.cemail}}</td>
+          <td>{{company.cmobile}}</td>
+          <td>{{company.clocation}}</td>
+          <td>{{company.cusername}}</td>
+          <td>{{company.cpassword}}</td>
+          <td><a [routerLink]="['companylist/companyDetails',company.id]">Show Deatails</a></td> 
+          <td><a class="btn">
+            <i class="fa fa-edit" [routerLink]="['companyupdate']" [state]="company"></i>
+          </a>
+          </td>
+          <td><a class="btn">
+            <i class="fa fa-trash" (click)="delete(company)"></i>
+          </a>
+          </td>
+          </tr>
+      </tbody>
+    </table>
+  </div>

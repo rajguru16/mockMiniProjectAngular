@@ -1,0 +1,52 @@
+<router-outlet></router-outlet>
+
+<!-- <div class="input-group rounded">
+  
+  <span class="input-group-text border-0" id="search-addon">
+    <i class="fas fa-search"></i>
+  </span>
+</div> -->
+<h1 style="text-align: center;"><b>All Employee Data</b></h1>
+<span class="">{{isEmployeePresent}}</span>
+<div class="input-group" class="d-inline-flex p-2" >
+  <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" [(ngModel)]="nameSerach"/>
+  <button type="button" class="btn btn-outline-primary" style="background-color: lightgrey; " (click)="employeeSearch()">Search</button>
+
+
+  <button  type="button" class="btn btn-primary" type="button" (click)="sortByName()" style="background-color: darkseagreen;" >Sort By Name</button>
+  
+</div>
+
+<div class="container">
+    <table class="table table-striped">
+      <tbody >
+          <th>Employee Name</th>
+          <th>Email</th>
+          <th>Mobile number</th>
+          <th>Designation</th>
+          <th>User Name</th>
+          <th>Password</th>
+        <tr *ngFor="let employee of employeeData">
+          <td>{{employee.ename}}</td>
+          <td>{{employee.email}}</td>
+          <td>{{employee.mobile}}</td>
+          <td>{{employee.designation}}</td>
+          <td>{{employee.username}}</td>
+          <td>{{employee.password}}</td>
+          <td><a [routerLink]="['employeedetails',employee.id]">show details</a></td>  
+                   
+          <td><a class="btn" [routerLink]="['update']" [state]="employee">
+            <i class="fa fa-edit"></i>
+          </a>
+          </td>
+          <td><a class="btn">
+            <i class="fa fa-trash" (click)="deleteEmployee(employee)"></i>
+          </a>
+          </td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+ 

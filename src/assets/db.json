@@ -1,0 +1,114 @@
+{
+  "employee": [
+    {
+      "id": 1,
+      "ename": "abc",
+      "email": "abc@abc.com",
+      "mobile": "8888888",
+      "designation": "Engineer",
+      "username": "abc",
+      "password": "abc"
+    },
+    {
+      "id": 2,
+      "ename": "aa",
+      "email": "aaa",
+      "mobile": "7989889",
+      "designation": "developer",
+      "username": "aaa",
+      "password": "aaa"
+    },
+    {
+      "id": 3,
+      "ename": "bbb",
+      "email": "bbb",
+      "mobile": "1111111111",
+      "designation": "Tester",
+      "username": "bbb",
+      "password": "bbb"
+    },
+    {
+      "id": 4,
+      "ename": "zzz",
+      "email": "zzz",
+      "mobile": "2222222222",
+      "designation": "logger",
+      "username": "zzz",
+      "password": "zzz"
+    }
+  ],
+  "company": [
+    {
+      "id": 1,
+      "cname": "Delta",
+      "cemail": "Delta@Delta.com",
+      "cusername": "delta",
+      "cpassword": "delta",
+      "cmobile": "4442223333",
+      "clocation": "pune"
+    },
+    {
+      "cname": "aaa",
+      "cemail": "aaa",
+      "cusername": "aaa",
+      "cpassword": "aaa",
+      "cmobile": "11111111",
+      "clocation": "aaa",
+      "id": 2
+    },
+    {
+      "cname": "qqq",
+      "cemail": "qqq",
+      "cusername": "qqq",
+      "cpassword": "qqq",
+      "cmobile": "5566768",
+      "clocation": "qqq",
+      "id": 3
+    },
+    {
+      "cname": "ggg",
+      "cemail": "ggg",
+      "cusername": "ggg",
+      "cpassword": "ggg",
+      "cmobile": "686868",
+      "clocation": "ggg",
+      "id": 4
+    },
+    {
+      "id": 5,
+      "cname": "uuu",
+      "cemail": "uuu",
+      "cmobile": "78787878",
+      "clocation": "pune",
+      "cusername": "uuu",
+      "cpassword": "uuu"
+    },
+    {
+      "id": 6,
+      "cname": "efjw",
+      "cemail": "reur",
+      "cmobile": "ur",
+      "clocation": "pcmc",
+      "cusername": "ir",
+      "cpassword": "ru"
+    },
+    {
+      "id": 7,
+      "cname": "bbb",
+      "cemail": "bbb",
+      "cmobile": "90909099",
+      "clocation": "biba",
+      "cusername": "bbb",
+      "cpassword": "bbb"
+    },
+    {
+      "cname": "urtu",
+      "cemail": "tu",
+      "cusername": "utyu",
+      "cpassword": "it",
+      "cmobile": "ut",
+      "clocation": "uty",
+      "id": 8
+    }
+  ]
+}
